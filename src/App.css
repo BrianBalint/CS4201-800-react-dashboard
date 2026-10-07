@@ -1,0 +1,94 @@
+/* ==========================================================
+   Interactive React Portfolio Dashboard
+   Brian Balint - CS 4201 Week 5
+   ========================================================== */
+
+/* The Vite starter index.css turns on dark mode. These two lines keep the
+   dashboard on a predictable white page so the cards read the same everywhere. */
+body {
+  background: #ffffff;
+  color: #1a1a1a;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  text-align: left;   /* the Vite starter centers #root, this puts the text back left */
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.15;   /* without this the two lines collide on a phone */
+  letter-spacing: -1px;
+  margin: 0 0 8px 0;
+}
+
+.introduction {
+  color: #6b6b6b;
+  font-size: 16px;
+  margin: 0 0 36px 0;
+}
+
+/* ----- Layout ----- */
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;              /* CHANGED from 20px, gives the cards more air */
+}
+
+.card {
+  flex: 1 1 250px;
+  padding: 22px;
+  border: 1px solid #d1d5db;
+  border-radius: 0;       /* CHANGED from 10px, square corners to match my portfolio */
+  background: white;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin: 0 0 4px 0;
+}
+
+.category {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #6b6b6b;
+  margin: 0 0 16px 0;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 16px 0 0 0;
+}
+
+/* ----- Images ----- */
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* ----- Button ----- */
+
+button {
+  padding: 10px 15px;
+  background: #0e0e0e;    /* CHANGED from #1b365d, matches the black used in my portfolio */
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;  /* ADDED, same idea as the Week 3 hover effect */
+}
+
+button:hover {
+  background: #4a4a4a;
+}
